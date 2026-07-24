@@ -1,0 +1,24 @@
+name: supercharged_plus_example
+description: Example app demonstrating supercharged_plus package.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supercharged_plus:
+    path: ../
+
+dependency_overrides:
+  supercharged_dart_plus:
+    path: ../../supercharged_dart_plus
+
+dev_dependencies:
+  flutter_lints: ^1.0.4
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

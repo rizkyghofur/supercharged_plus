@@ -1,0 +1,13 @@
+name: supercharged_dart_plus_example
+description: Example app demonstrating supercharged_dart_plus package.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  supercharged_dart_plus:
+    path: ../
+
+dev_dependencies:
+  lints: ^1.0.1
