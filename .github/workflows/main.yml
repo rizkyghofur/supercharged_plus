@@ -10,30 +10,26 @@ on:
 
 jobs:
   tests:
-    name: Unit tests
+    name: Unit tests & Analysis
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-java@v1
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
         with:
-          java-version: "12.x"
-      - uses: subosito/flutter-action@v1
-        with:
-          channel: "beta"
+          channel: 'stable'
 
-      - name: supercharged_dart / get dependencies
-        run: flutter pub get
-        working-directory: ./supercharged_dart
+      - name: supercharged_dart_plus / get dependencies & test
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+        working-directory: ./supercharged_dart_plus
 
-      - name: supercharged_dart / run tests
-        run: flutter pub run test
-        working-directory: ./supercharged_dart
-
-      - name: supercharged / get dependencies
-        run: flutter pub get
-        working-directory: ./supercharged
-
-      - name: supercharged / run tests
-        run: flutter test
-        working-directory: ./supercharged
+      - name: supercharged_plus / get dependencies & test
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+        working-directory: ./supercharged_plus
