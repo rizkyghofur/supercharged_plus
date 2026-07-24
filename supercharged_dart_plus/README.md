@@ -1,4 +1,4 @@
-# ⚡️ Supercharged Dart Plus (`supercharged_dart_plus`)
+# Supercharged Dart Plus (`supercharged_dart_plus`)
 
 Supercharged Dart Plus brings Kotlin-like comfort features and extension functions to Dart developers for native, server, and web projects.
 
@@ -6,7 +6,7 @@ Maintained and optimized for `pub.dev` by **[rizkyghofur](https://github.com/riz
 
 ---
 
-## ⚡️ Features
+## Features
 
 - **Collection & List Utilities**: Sorting helpers (`sortAsc`, `sortDesc`), slicing, grouping, filtering, chunking.
 - **String Enhancements**: Substring extraction, regex utilities, conversions.
@@ -14,13 +14,13 @@ Maintained and optimized for `pub.dev` by **[rizkyghofur](https://github.com/riz
 
 ---
 
-## 📦 Installation
+## Installation
 
 Add `supercharged_dart_plus` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  supercharged_dart_plus: ^2.1.1
+  supercharged_dart_plus: ^2.2.0
 ```
 
 Import it in your Dart code:
@@ -31,7 +31,7 @@ import 'package:supercharged_dart_plus/supercharged_dart_plus.dart';
 
 ---
 
-## 💡 Code Examples
+## Code Examples
 
 ### Sorting Helpers
 ```dart
@@ -48,7 +48,7 @@ list.sortDesc(); // [4, 3, 2, 1]
 
 ---
 
-## 🤝 Pull Request Credits & Attributions
+## Pull Request Credits & Attributions
 
 This repository integrates enhancements contributed by **[@jopmiddelkamp](https://github.com/jopmiddelkamp)**:
 
@@ -56,7 +56,7 @@ This repository integrates enhancements contributed by **[@jopmiddelkamp](https:
 
 ---
 
-## 📄 License
+## License
 
 Original project licensed under MIT License.
 Owner & Maintainer: **rizkyghofur**.
