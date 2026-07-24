@@ -84,15 +84,6 @@ Color color = "#FF0000".toColor();
 
 ---
 
-## Pull Request Credits & Attributions
-
-This release incorporates features originally proposed and contributed by **[@jopmiddelkamp](https://github.com/jopmiddelkamp)**:
-
-1. **[Pull Request #35](https://github.com/felixblaschke/supercharged/pull/35)**: Added `DeltaOffset` helper class for directional offsets.
-2. **[Pull Request #36](https://github.com/felixblaschke/supercharged/pull/36)**: Added `sortAsc` and `sortDesc` sorting helpers.
-
----
-
 ## License
 
 Original project licensed under MIT License.

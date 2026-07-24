@@ -13,15 +13,6 @@ Maintained & owned by **[rizkyghofur](https://github.com/rizkyghofur)**.
 
 ---
 
-## Feature Enhancements & Pull Request Credits
-
-This repository incorporates features and improvements from upstream pull requests by **[@jopmiddelkamp](https://github.com/jopmiddelkamp)**:
-
-- **[Pull Request #35](https://github.com/felixblaschke/supercharged/pull/35)**: Added `DeltaOffset` helper class for directional offset creation (`DeltaOffset.rightBottom(...)`, `DeltaOffset.leftTop(...)`, etc.).
-- **[Pull Request #36](https://github.com/felixblaschke/supercharged/pull/36)**: Added sort order helpers (`sortAsc()`, `sortDesc()`, `sortAsc(a, b)`, `sortDesc(a, b)`) for list sorting.
-
----
-
 ## Usage & Quick Start
 
 ### Flutter

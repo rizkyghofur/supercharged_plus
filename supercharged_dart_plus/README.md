@@ -48,14 +48,6 @@ list.sortDesc(); // [4, 3, 2, 1]
 
 ---
 
-## Pull Request Credits & Attributions
-
-This repository integrates enhancements contributed by **[@jopmiddelkamp](https://github.com/jopmiddelkamp)**:
-
-- **[Pull Request #36](https://github.com/felixblaschke/supercharged/pull/36)**: `sortAsc` and `sortDesc` sorting helpers.
-
----
-
 ## License
 
 Original project licensed under MIT License.
