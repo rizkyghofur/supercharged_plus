@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [Duration].
 extension DurationSC on Duration {

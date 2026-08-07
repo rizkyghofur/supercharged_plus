@@ -8,8 +8,9 @@ Maintained and optimized for `pub.dev` by **[rizkyghofur](https://github.com/riz
 
 ## Features
 
-- **Collection & List Utilities**: Sorting helpers (`sortAsc`, `sortDesc`), slicing, grouping, filtering, chunking.
-- **String Enhancements**: Substring extraction, regex utilities, conversions.
+- **Collection & List Utilities**: Sorting helpers (`sortAsc`, `sortDesc`), slicing, grouping, filtering, chunking, `distinctBy`.
+- **String Enhancements**: Substring extraction, `capitalize()`, `toTitleCase()`, `removePrefix()`, `removeSuffix()`, `isEmail`, `isUrl`.
+- **DateTime Helpers**: `isToday`, `isYesterday`, `isTomorrow`, `copyWith()`.
 - **Numbers & Iteration**: Range generation (`0.rangeTo(5)`), duration units (`2.seconds`), math helpers.
 
 ---
@@ -20,7 +21,7 @@ Add `supercharged_dart_plus` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  supercharged_dart_plus: ^2.2.0
+  supercharged_dart_plus: ^2.3.0
 ```
 
 Import it in your Dart code:

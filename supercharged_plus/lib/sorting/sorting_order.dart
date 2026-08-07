@@ -1,4 +1,4 @@
-part of supercharged_plus;
+part of '../supercharged_plus.dart';
 
 extension ListSort<T> on List<Comparable<T>> {
   /// A supercharged helper that sorts a list ascending. For example:

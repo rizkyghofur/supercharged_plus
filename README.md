@@ -19,7 +19,7 @@ Maintained & owned by **[rizkyghofur](https://github.com/rizkyghofur)**.
 In your `pubspec.yaml`:
 ```yaml
 dependencies:
-  supercharged_plus: ^2.2.0
+  supercharged_plus: ^2.3.0
 ```
 
 ```dart
@@ -30,7 +30,7 @@ import 'package:supercharged_plus/supercharged_plus.dart';
 In your `pubspec.yaml`:
 ```yaml
 dependencies:
-  supercharged_dart_plus: ^2.2.0
+  supercharged_dart_plus: ^2.3.0
 ```
 
 ```dart

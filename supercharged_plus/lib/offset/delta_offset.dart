@@ -1,4 +1,4 @@
-part of supercharged_plus;
+part of '../supercharged_plus.dart';
 
 /// Supercharged helper to create an [Offset] based on directional deltas.
 class DeltaOffset extends Offset {

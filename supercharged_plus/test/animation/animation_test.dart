@@ -41,14 +41,14 @@ bool compareAnimation({
     vsync: const TestVSync(),
   );
 
-  final _actual = actual(controller);
-  final _matcher = matcher(controller);
+  final actualAnim = actual(controller);
+  final matcherAnim = matcher(controller);
 
   var v = 0.0;
   while (v <= 1) {
     v += 0.01;
     controller.value = v;
-    if (_actual.value != _matcher.value) {
+    if (actualAnim.value != matcherAnim.value) {
       controller.dispose();
       return false;
     }

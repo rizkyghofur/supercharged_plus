@@ -1,4 +1,4 @@
-part of supercharged_plus;
+part of '../supercharged_plus.dart';
 
 /// Supercharged Flutter extension on [Color] objects.
 extension ColorSCF on Color {

@@ -24,4 +24,21 @@ void main() {
     expect(''.toList(), equals(<int>[]));
     expect('hello'.toList(), equals(['h', 'e', 'l', 'l', 'o']));
   });
+
+  test('string capitalize and toTitleCase', () {
+    expect('hello'.capitalize(), equals('Hello'));
+    expect('hello world'.toTitleCase(), equals('Hello World'));
+  });
+
+  test('string removePrefix and removeSuffix', () {
+    expect('https://flutter.dev'.removePrefix('https://'), equals('flutter.dev'));
+    expect('document.pdf'.removeSuffix('.pdf'), equals('document'));
+  });
+
+  test('string isEmail and isUrl', () {
+    expect('test@example.com'.isEmail, isTrue);
+    expect('invalid-email'.isEmail, isFalse);
+    expect('https://flutter.dev'.isUrl, isTrue);
+    expect('not a url'.isUrl, isFalse);
+  });
 }

@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [double] numbers.
 extension DoubleSC on double {

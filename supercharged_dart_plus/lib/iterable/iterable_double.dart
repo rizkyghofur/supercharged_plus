@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [Iterable<double>] like [List<double>] and [Set<double>].
 extension IterableOfDoubleSC on Iterable<double> {

@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [Iterable<MapEntry>] like [List<MapEntry>] and [Set<MapEntry>].
 extension IterableOfMapEntrySC<K, V> on Iterable<MapEntry<K, V>> {

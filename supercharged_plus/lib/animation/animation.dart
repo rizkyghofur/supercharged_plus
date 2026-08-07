@@ -1,4 +1,4 @@
-part of supercharged_plus;
+part of '../supercharged_plus.dart';
 
 /// Supercharged Flutter extension on [Animation] objects.
 extension AnimationSCF on Animation<double> {

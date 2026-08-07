@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Throws an [Error] if predicate [test] is satisfied
 ///

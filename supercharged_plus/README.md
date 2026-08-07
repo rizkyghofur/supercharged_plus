@@ -10,7 +10,8 @@ Maintained and optimized for `pub.dev` by **[rizkyghofur](https://github.com/riz
 
 Supercharged Plus enhances Flutter development with syntax shortcuts and extensions:
 
-- **BuildContext**: Clean UI shortcuts (`context.width`, `context.height`, `context.theme`, `context.isDarkMode`, `context.padding`).
+- **BuildContext**: Clean UI shortcuts (`context.width`, `context.height`, `context.theme`, `context.textTheme`, `context.colorScheme`, `context.isDarkMode`, `context.padding`, `context.pop()`, `context.push()`).
+- **Widgets**: Layout wrappers (`widget.paddingAll()`, `widget.center()`, `widget.expanded()`, `widget.clipRRect()`).
 - **Colors**: Parse hex strings (`"#ff0000".toColor()`), adjust opacity/brightness.
 - **Animations**: Solid tween shortcuts (`100.0.tweenTo(200.0)`).
 - **Offsets & UI**: `DeltaOffset` directional offset helpers (`DeltaOffset.rightBottom(7.5, 5.0)`).
@@ -25,7 +26,7 @@ Add `supercharged_plus` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  supercharged_plus: ^2.2.0
+  supercharged_plus: ^2.3.0
 ```
 
 Import it in your Flutter app:

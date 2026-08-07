@@ -1,6 +1,13 @@
+## 2.3.0
+
+- **New String Extensions**: Added `capitalize()`, `toTitleCase()`, `removePrefix()`, `removeSuffix()`, `isEmail`, and `isUrl`.
+- **New DateTime Extensions**: Added `isToday`, `isYesterday`, `isTomorrow`, and `copyWith()`.
+- **New Iterable Extension**: Added `distinctBy()`.
+- **Linter & Code Modernization**: Updated to `lints: ^5.0.0` and converted `part of` directives to URI format.
+
 ## 2.2.0
 
-- **Project Rebranding**: Package rebranded to `supercharged_dart_plus` maintained by **rizkyghofur**.
+- **Project Rebranding**: Package rebranded to `supercharged_dart_plus`.
 - **New Feature ([PR #36](https://github.com/felixblaschke/supercharged/pull/36))**: Added `sortAsc` and `sortDesc` list sorting extension methods and comparator functions contributed by `@jopmiddelkamp`.
 - **Dart 3 & Flutter 3 Support**: Modernized SDK constraints (`>=2.12.0 <4.0.0`) for Dart 3 and Flutter 3 compatibility.
 - **Pub.dev Optimizations**: Added `LICENSE` (MIT), updated pubspec metadata (`repository`, `issue_tracker`, `topics`), created runnable `example/main.dart`, and published new [`migration.md`](https://github.com/rizkyghofur/supercharged_plus/blob/main/migration.md) guide.

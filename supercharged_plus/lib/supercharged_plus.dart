@@ -25,3 +25,4 @@ part 'rect/rect.dart';
 part 'size/size.dart';
 part 'sorting/sorting_order.dart';
 part 'string/string.dart';
+part 'widget/widget_extension.dart';

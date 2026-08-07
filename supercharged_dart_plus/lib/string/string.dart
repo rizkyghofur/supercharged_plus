@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [String].
 extension StringSC on String {
@@ -160,5 +160,67 @@ extension StringSC on String {
     } catch (error) {
       return null;
     }
+  }
+
+  /// Capitalizes the first character of the string.
+  ///
+  /// Example:
+  /// ```dart
+  /// 'hello'.capitalize(); // 'Hello'
+  /// ```
+  String capitalize() {
+    if (isEmpty) return this;
+    return '${this[0].toUpperCase()}${substring(1)}';
+  }
+
+  /// Capitalizes the first letter of each word in the string.
+  ///
+  /// Example:
+  /// ```dart
+  /// 'hello world'.toTitleCase(); // 'Hello World'
+  /// ```
+  String toTitleCase() {
+    if (isEmpty) return this;
+    return split(' ').map((word) => word.capitalize()).join(' ');
+  }
+
+  /// Removes [prefix] from the start of the string if it exists.
+  ///
+  /// Example:
+  /// ```dart
+  /// 'https://flutter.dev'.removePrefix('https://'); // 'flutter.dev'
+  /// ```
+  String removePrefix(String prefix) {
+    if (startsWith(prefix)) {
+      return substring(prefix.length);
+    }
+    return this;
+  }
+
+  /// Removes [suffix] from the end of the string if it exists.
+  ///
+  /// Example:
+  /// ```dart
+  /// 'document.pdf'.removeSuffix('.pdf'); // 'document'
+  /// ```
+  String removeSuffix(String suffix) {
+    if (endsWith(suffix)) {
+      return substring(0, length - suffix.length);
+    }
+    return this;
+  }
+
+  /// Returns true if the string is a valid email address format.
+  bool get isEmail {
+    final emailRegex = RegExp(
+        r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$");
+    return emailRegex.hasMatch(this);
+  }
+
+  /// Returns true if the string is a valid URL format.
+  bool get isUrl {
+    final urlRegex = RegExp(
+        r'^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$');
+    return urlRegex.hasMatch(this);
   }
 }

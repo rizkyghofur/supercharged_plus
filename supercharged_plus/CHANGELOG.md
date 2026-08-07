@@ -1,3 +1,10 @@
+## 2.3.0
+
+- **New Widget Extensions**: Added `.paddingAll()`, `.paddingSymmetric()`, `.paddingOnly()`, `.center()`, `.expanded()`, `.flexible()`, `.clipRRect()`.
+- **New BuildContext Extensions**: Added `textTheme`, `colorScheme`, `showSnackBar()`, `pop()`, `push()`.
+- **Updated `supercharged_dart_plus`**: Bumped dependency to `^2.3.0` featuring new String, DateTime, and Iterable extensions.
+- **Linter & Code Modernization**: Updated to `flutter_lints: ^5.0.0` and converted `part of` directives to URI format.
+
 ## 2.2.0
 
 - **Project Rebranding**: Package rebranded to `supercharged_plus` maintained by **rizkyghofur**.

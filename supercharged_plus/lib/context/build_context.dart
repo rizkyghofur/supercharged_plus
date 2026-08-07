@@ -1,4 +1,4 @@
-part of supercharged_plus;
+part of '../supercharged_plus.dart';
 
 /// Supercharged extension on [BuildContext] for UI convenience.
 extension ContextUtils on BuildContext {
@@ -31,4 +31,27 @@ extension ContextUtils on BuildContext {
 
   /// Returns true if orientation is landscape.
   bool get isLandscape => orientation == Orientation.landscape;
+
+  /// Returns the [TextTheme] of the current context.
+  TextTheme get textTheme => theme.textTheme;
+
+  /// Returns the [ColorScheme] of the current context.
+  ColorScheme get colorScheme => theme.colorScheme;
+
+  /// Shows a [SnackBar] in the current context.
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
+    SnackBar snackBar,
+  ) {
+    return ScaffoldMessenger.of(this).showSnackBar(snackBar);
+  }
+
+  /// Pops the current route from the [Navigator].
+  void pop<T extends Object?>([T? result]) {
+    Navigator.of(this).pop<T>(result);
+  }
+
+  /// Pushes a new route onto the [Navigator].
+  Future<T?> push<T extends Object?>(Route<T> route) {
+    return Navigator.of(this).push<T>(route);
+  }
 }

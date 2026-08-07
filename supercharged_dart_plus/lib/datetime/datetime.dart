@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extension on [DateTime] objects.
 extension DateTimeSC on DateTime {
@@ -107,5 +107,61 @@ extension DateTimeSC on DateTime {
   /// ```
   bool isBetween(DateTime from, DateTime to) {
     return (isAfter(from) && isBefore(to)) || this == from || this == to;
+  }
+
+  /// Returns true if this date is today.
+  bool get isToday {
+    final now = DateTime.now();
+    return year == now.year && month == now.month && day == now.day;
+  }
+
+  /// Returns true if this date is yesterday.
+  bool get isYesterday {
+    final yesterday = DateTime.now().subtract(const Duration(days: 1));
+    return year == yesterday.year &&
+        month == yesterday.month &&
+        day == yesterday.day;
+  }
+
+  /// Returns true if this date is tomorrow.
+  bool get isTomorrow {
+    final tomorrow = DateTime.now().add(const Duration(days: 1));
+    return year == tomorrow.year &&
+        month == tomorrow.month &&
+        day == tomorrow.day;
+  }
+
+  /// Returns a new [DateTime] with updated field values.
+  DateTime copyWith({
+    int? year,
+    int? month,
+    int? day,
+    int? hour,
+    int? minute,
+    int? second,
+    int? millisecond,
+    int? microsecond,
+  }) {
+    return isUtc
+        ? DateTime.utc(
+            year ?? this.year,
+            month ?? this.month,
+            day ?? this.day,
+            hour ?? this.hour,
+            minute ?? this.minute,
+            second ?? this.second,
+            millisecond ?? this.millisecond,
+            microsecond ?? this.microsecond,
+          )
+        : DateTime(
+            year ?? this.year,
+            month ?? this.month,
+            day ?? this.day,
+            hour ?? this.hour,
+            minute ?? this.minute,
+            second ?? this.second,
+            millisecond ?? this.millisecond,
+            microsecond ?? this.microsecond,
+          );
   }
 }

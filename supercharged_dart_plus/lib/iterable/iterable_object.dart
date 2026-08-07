@@ -1,4 +1,4 @@
-part of supercharged_dart_plus;
+part of '../supercharged_dart_plus.dart';
 
 /// Supercharged extensions on [Iterables] like [List] and [Set].
 extension IterableSC<T> on Iterable<T> {
@@ -598,5 +598,22 @@ extension IterableSC<T> on Iterable<T> {
     var list = toList();
     list.shuffle(random);
     return list.take(min(count, length)).toList();
+  }
+
+  /// Returns an [Iterable] containing only elements from the given collection
+  /// having distinct keys returned by the given [selector] function.
+  ///
+  /// Example:
+  /// ```dart
+  /// [{'id': 1, 'name': 'A'}, {'id': 1, 'name': 'B'}].distinctBy((e) => e['id']); // [{'id': 1, 'name': 'A'}]
+  /// ```
+  Iterable<T> distinctBy<K>(K Function(T element) selector) sync* {
+    final set = <K>{};
+    for (final element in this) {
+      final key = selector(element);
+      if (set.add(key)) {
+        yield element;
+      }
+    }
   }
 }
