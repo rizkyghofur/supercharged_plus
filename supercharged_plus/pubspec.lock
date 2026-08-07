@@ -171,9 +171,10 @@ packages:
   supercharged_dart_plus:
     dependency: "direct main"
     description:
-      path: "../supercharged_dart_plus"
-      relative: true
-    source: path
+      name: supercharged_dart_plus
+      sha256: "115bf23f75dbcf13eec37f1e5f4c9272e07edda15869a0df5350d6ba7d1091b5"
+      url: "https://pub.dev"
+    source: hosted
     version: "2.3.0"
   term_glyph:
     dependency: transitive

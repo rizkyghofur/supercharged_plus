@@ -174,14 +174,14 @@ packages:
       path: "../../supercharged_dart_plus"
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.0"
   supercharged_plus:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.0"
   term_glyph:
     dependency: transitive
     description:
