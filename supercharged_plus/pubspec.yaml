@@ -18,10 +18,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-dependency_overrides:
-  supercharged_dart_plus:
-    path: ../supercharged_dart_plus
-
 dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
